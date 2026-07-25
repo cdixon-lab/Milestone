@@ -1,0 +1,12 @@
+body { background-color: aqua; 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+h1 {color:crimson;}
+.Affordable-Housing {color:rgb(220, 243, 9);}
+.Certificates {color:rgb(188, 9, 243);}
+#neighboring-sources {border: 2px solid rgb(4, 87, 27);
+                    padding: 10px;
+                    margin: 20px;}
+#my-company {border: 2px solid rgb(22, 3, 72);
+                    padding: 10px;
+                    margin: 20px;}
+   
