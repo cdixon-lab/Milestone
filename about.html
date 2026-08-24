@@ -12,7 +12,7 @@
     <h1>About Me</h1>
     <section class="contact-form">
     <h2>Contact Me</h2>
- <form>
+ <form id="contact-form" novalidate>
         <fieldset>
             <legend>Send Me a Message</legend>
 
@@ -27,8 +27,11 @@
 
             <button type="submit">Submit</button>
 
-            <p class="error" aria-live="polite">
-                Please complete all required fields before submitting.
+            <p 
+                id="form-error"
+                class="error"
+                aria-live="polite"
+                hidden>
             </p>
 
         </fieldset>
@@ -60,7 +63,7 @@
 <footer>
     <p>© 2026 Cristian Dixon</p>
 </footer>
-
+<script scr="script.js"></script>
 </body>
 </html>
 
