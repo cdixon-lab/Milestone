@@ -1,84 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Cristian | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-  
+
 <body>
-  <h1>Hobbies</h1>
-    <p>When I have a day off from work, you will see me somewhere by the water with a coffee. I enjoy anything in nature, and on a good day you'll see me riding my longboard.</p>
-    <p>•Long Walks</p>
-     <p>•Animals</p>
-     <p>•Sailing</p>
-     <p>•Thrifting</p>
-</body>
-<header>
-    <h1>About Me</h1>
-    <section class="contact-form">
-    <h2>Contact Me</h2>
- <form id="contact-form" novalidate>
-        <fieldset>
-            <legend>Send Me a Message</legend>
 
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+    <header>
 
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+        <h1>About Me</h1>
 
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About/Contact</a></li>
+            </ul>
+        </nav>
 
-            <button type="submit">Submit</button>
+    </header>
 
-            <p 
-                id="form-error"
-                class="error"
-                aria-live="polite"
-                hidden>
+
+    <main>
+
+        <section class="about-section">
+
+            <h2>About Cristian</h2>
+
+            <p>
+                I am a college student interested in real estate, technology,
+                web development, business, and environmental topics.
             </p>
 
-        </fieldset>
-    </form>
-</section>
- <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About/Contact</a>
-    </nav>
-</header>
+            <p>
+                Through my coursework, I have developed experience with HTML,
+                CSS, JavaScript, IT troubleshooting, networking, and accessibility.
+            </p>
 
-<main>
+            <p>
+                I enjoy learning new skills and creating projects that allow me
+                to combine technology with real-world interests.
+            </p>
 
-<section>
+        </section>
 
-    <h2>About Cristian</h2>
 
-    <p>I am a college student interested in real estate, technology, and web development.</p>
+        <section class="about-section">
 
-    <h3>Contact</h3>
+            <h2>My Goals</h2>
 
-    <p>Email: cristian@example.com</p>
+            <p>
+                My goal is to continue building my professional skills and
+                eventually develop a career involving real estate, technology,
+                and business.
+            </p>
 
-</section>
-    <section>
-        <h2>Smiles All Day</h2>
-          <button id="housing-toggle">Hide Housing Details</button>
-        <div id="housing-info">
-            <p>In the future, I plan to help the homeless gain new lives</p>
-         <p>That's why housing is important to me for future happenings</p>
-        </div>
+            <p>
+                I also want to continue creating projects that demonstrate
+                my ability to learn, solve problems, and communicate effectively.
+            </p>
 
-    </section>
+        </section>
 
-</main>
 
-<footer>
-    <p>© 2026 Cristian Dixon</p>
-</footer>
-<script src="assets/script.js"></script>
+        <section class="contact-section" id="contact">
+
+            <h2>Contact Me</h2>
+
+            <form id="contact-form">
+
+                <fieldset>
+
+                    <legend>Send Me a Message</legend>
+
+                    <label for="name">
+                        Name:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required>
+
+                    <label for="email">
+                        Email:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+
+                    <label for="message">
+                        Message:
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        required></textarea>
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                    <p
+                        id="form-error"
+                        class="error"
+                        aria-live="polite">
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Cristian Dixon</p>
+    </footer>
+
+
+    <script src="assets/script.js"></script>
+
 </body>
 </html>
-
