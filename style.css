@@ -202,10 +202,6 @@ header{
     cursor: pointer;
 }
 
-#housing-info {
-    display: block;
-}
-
 #housing-info p {
     line-height: 1.6;
 }
