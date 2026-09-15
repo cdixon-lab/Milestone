@@ -138,6 +138,91 @@ header{
 }
 
 }
+/* Portfolio Project Cards */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h2 {
+    margin-top: 0;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-card li {
+    margin-bottom: 8px;
+}
+
+.intro,
+.about-section,
+.side-quests {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.about-section p {
+    line-height: 1.7;
+}
+
+.housing-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.housing-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.housing-details {
+    padding: 20px;
+}
+
+#housing-toggle {
+    margin-bottom: 20px;
+}
+
+#housing-info {
+    display: block;
+}
+
+#housing-info p {
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+
+    .housing-content {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .housing-details {
+        padding: 10px;
+    }
+}
 
 
    
