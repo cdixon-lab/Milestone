@@ -8,28 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         housingToggle.addEventListener("click", function () {
 
-            const isHidden = housingInfo.hidden;
+            const isHidden = !housingInfo.hidden;
 
             housingInfo.hidden = !isHidden;
 
-            housingToggle.setAttribute(
-                "aria-expanded",
-                String(isHidden)
-            );
-
-            if (isHidden) {
-                housingToggle.textContent = "Hide Housing Details";
-            } else {
+          if (housingInfo.hidden) {
                 housingToggle.textContent = "Show Housing Details";
+                housingToggle.setAttribute("aria-expanded", "false");
+            } else {
+                housingToggle.textContent = "Hide Housing Details";
+                housingToggle.setAttribute("aria-expanded", "true");
             }
-
         });
-
     }
-
 });
-
-
 
 /* Contact Form */
 
