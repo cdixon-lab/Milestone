@@ -236,6 +236,8 @@ header{
 }
 
 }
-
+#housing-info[hidden] {
+    display: none! important;
+}
 
    
