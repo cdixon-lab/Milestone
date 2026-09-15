@@ -1,99 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Cristian Dixon | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
-
-<title>Portfolio</title>
 </head>
-<body>
-<div role="banner">Home</div>
-    <div role="navigation">Resources</div>
-    <header> 
-        <h1>Housing Awareness</h1>
 
-        <nav aria-label="Main Navigation"> 
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About/Contract</a>
- </nav>
+<body>
+
+    <header>
+        <h1>Cristian Dixon</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About/Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <img src="assets/images/TheGapTheProblem.jpeg" 
-              alt="Housing shortage infographic showing affordable housing challenges." 
-              
-     <section class="Affordable-Housing">
 
-    <div class="housing-layout">
+        <section class="intro">
+            <h2>Welcome to My Portfolio</h2>
 
-        <img
-            src="assets/images/TheGapTheProblem.jpeg"
-            alt="Housing shortage infographic showing affordable housing challenges"
-            width="306"
-            height="130">
- <section>
-        <h2>Resources</h2>
-          <button id="housing-toggle">Hide Housing Details</button>
-        <div id="housing-info">
-             <li>Affordable housing helps make stable housing more accessible.</li>
-                <li>The United States has a shortage of affordable rental homes.</li>
-                <li>High housing costs can make it harder for families to find safe housing.</li>
-                <li>Government funding and rental assistance can help address housing needs.</li>
-                <li>Zoning changes and nonprofit programs can increase affordable housing.</li>
-        </div>
+            <p>
+                I'm Cristian, a college student interested in real estate,
+                technology, web development, and creating meaningful digital experiences.
+            </p>
 
-    </section>
-
-        <button
-            id="housing-toggle"
-            type="button"
-            aria-controls="housing-info"
-            aria-expanded="true">
-            Hide Housing Details
-        </button>
-
-    </div>
-
-</section>
-
-        </button>
-
-    </div>
-
-</section>
-
-
-        <section  class="Certificates">
-            <h2 id="certificates">
-                Free Certificates
-            </h2> 
-            <p>Dixon Financial</p>
-                <p>Navy Federal</p>
-            <p>D.C Credit One</p>
-
-                <h3> 
-                    Instant Loans
-                </h3>
-                <ul>
-                        <li>Perri Loans</li>
-                        <li>Stuart Loans</li>
-                        <li>Crystal Loans</li>
-                </ul>
-                
+            <p>
+                This portfolio highlights some of the skills, projects,
+                and achievements I've developed throughout my education.
+            </p>
         </section>
+
+
+        <section class="featured-project">
+
+            <h2>Featured Project: Housing Affordability</h2>
+
+            <div class="housing-content">
+
+                <div class="housing-image">
+                    <img
+                        src="assets/images/TheGapTheProblem.jpeg"
+                        alt="Housing affordability infographic showing the gap between housing needs and available affordable housing">
+                </div>
+
+                <div class="housing-details">
+
+                    <h3>Housing Affordability Research</h3>
+
+                    <p>
+                        This project explores housing affordability and the challenges
+                        that rising housing costs create for individuals and families.
+                    </p>
+
+                    <p>
+                        I researched possible solutions including affordable housing
+                        development, rental assistance programs, zoning changes,
+                        and additional investment in housing resources.
+                    </p>
+
+                    <button
+                        id="housing-toggle"
+                        type="button"
+                        aria-controls="housing-info"
+                        aria-expanded="false">
+                        Show Housing Details
+                    </button>
+
+                    <div id="housing-info" hidden>
+
+                        <ul>
+                            <li>Affordable housing can help create more stable communities.</li>
+                            <li>High housing costs can make it difficult for families to find safe housing.</li>
+                            <li>Government funding and rental assistance can help address housing needs.</li>
+                            <li>Zoning changes and nonprofit programs can support affordable housing development.</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="skills">
+
+            <h2>Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Web Development</li>
+                <li>IT Hardware and Troubleshooting</li>
+                <li>Networking</li>
+                <li>Environmental Awareness</li>
+                <li>Accessibility</li>
+            </ul>
+
+        </section>
+
+
+        <section class="goals">
+
+            <h2>Career Goals</h2>
+
+            <p>
+                My goal is to continue developing my technology and communication
+                skills while building a career connected to real estate and business.
+            </p>
+
+            <p>
+                I want my future work to combine technology, problem-solving,
+                and helping people find better opportunities.
+            </p>
+
+        </section>
+
     </main>
-  <footer>
-    <p>2026 Cristian Dixon</p>
-  </footer>
-<script scr="assets/script.js"></script>
-      
+
+
+    <footer>
+        <p>&copy; 2026 Cristian Dixon</p>
+    </footer>
+
+
+    <script src="assets/script.js"></script>
+
 </body>
 </html>
