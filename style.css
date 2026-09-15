@@ -198,7 +198,8 @@ header{
 }
 
 #housing-toggle {
-    margin-bottom: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
 }
 
 #housing-info {
@@ -222,6 +223,22 @@ header{
     .housing-details {
         padding: 10px;
     }
+    .housing-layout {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.housing-layout img {
+    width: 45%;
+    height: auto;
+}
+#housing-info {
+    flex: 1;
+}
+#housing-info ul {
+    padding-left: 20px;
+}
+
 }
 
 
