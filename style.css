@@ -53,10 +53,9 @@ nav a:hover{
 
 img{
     width:100%;
-    max-width:700px;
+    height: auto;
     display:block;
-    margin:24px auto;
-    border-radius:12px;
+    
 }
 
 main{
