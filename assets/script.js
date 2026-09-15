@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* Housing Details Toggle */
+
     const housingToggle = document.querySelector("#housing-toggle");
     const housingInfo = document.querySelector("#housing-info");
 
@@ -7,51 +9,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
         housingToggle.addEventListener("click", function () {
 
-            const isHidden = !housingInfo.hidden;
+            const isHidden = housingInfo.hidden;
 
             housingInfo.hidden = !isHidden;
 
-          if (housingInfo.hidden) {
-                housingToggle.textContent = "Show Housing Details";
-                housingToggle.setAttribute("aria-expanded", "false");
-            } else {
-                housingToggle.textContent = "Hide Housing Details";
-                housingToggle.setAttribute("aria-expanded", "true");
-            }
+            housingToggle.textContent = isHidden
+                ? "Hide Housing Details"
+                : "Show Housing Details";
+
+            housingToggle.setAttribute(
+                "aria-expanded",
+                String(isHidden)
+            );
+
         });
+
     }
-});
 
-/* Contact Form */
 
-const contactForm = document.querySelector("#contact-form");
+    /* Contact Form */
 
-if (contactForm) {
+    const contactForm = document.querySelector("#contact-form");
 
-    contactForm.addEventListener("submit", function (event) {
+    if (contactForm) {
 
-        event.preventDefault();
+        contactForm.addEventListener("submit", function (event) {
 
-        const nameInput = document.querySelector("#name");
-        const emailInput = document.querySelector("#email");
-        const messageInput = document.querySelector("#message");
-        const errorMessage = document.querySelector("#form-error");
+            event.preventDefault();
 
-        if (
-            nameInput.value.trim() === "" ||
-            emailInput.value.trim() === "" ||
-            messageInput.value.trim() === ""
-        ) {
+            const nameInput = document.querySelector("#name");
+            const emailInput = document.querySelector("#email");
+            const messageInput = document.querySelector("#message");
+            const errorMessage = document.querySelector("#form-error");
+
+            if (
+                nameInput.value.trim() === "" ||
+                emailInput.value.trim() === "" ||
+                messageInput.value.trim() === ""
+            ) {
+
+                errorMessage.textContent =
+                    "Please complete all fields before submitting.";
+
+                return;
+            }
 
             errorMessage.textContent =
-                "Please complete all fields before submitting.";
+                "Thank you! Your message has been submitted.";
 
-            return;
-        }
+            contactForm.reset();
 
-        errorMessage.textContent =
-            "Thank you! Your message has been submitted.";
+        });
 
-        contactForm.reset();
-    });
-}
+    }
+
+});
