@@ -2,26 +2,17 @@ const housingToggle = document.querySelector("#housing-toggle");
 const housingInfo = document.querySelector("#housing-info");
 
 housingToggle.addEventListener("click", function () {
-if (housingDetails.style.display =="none") {
-    housingDetails.style.display = "block";
-    housingToggle.textContent = "Hide Housing Details";
-} else {
-         housingDetails.style.display = "none";
-         housingToggle.textContent = "Show Housing Details";
-}
+const isHidden = housingInfo.hidden;
+
+    housingInfo.hidden = !isHidden;
+    housingToggle.setAttribute("aria-expanded" , String(isHidden));
+
+    if (isHidden) {
+             housingToggle.textContent = "Hide Housing Details";
+    } else {
+        housingToggle.textContent = "Show Housing Details";
+    }
 });
-        const isHidden = housingInfo.hidden;
-
-        housingInfo.hidden = !isHidden;
-        housingToggle.setAttribute("aria-expanded", String(isHidden));
-
-        if (isHidden) {
-            housingToggle.textContent = "Hide Housing Details";
-        } else {
-            housingToggle.textContent = "Show Housing Details";
-        }
-    });
-}
 
 const contactForm = document.querySelector("#contact-form");
 
